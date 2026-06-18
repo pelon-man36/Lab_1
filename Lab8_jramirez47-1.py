@@ -21,9 +21,10 @@ def find_UPC(code):
         true_result = 10 - true_result
     
     if true_result == int(code[-1]):
-        print("Valid UPC code.")
+        print(f"{true_result} is a valid final digit for UPC code.")
     else:
-        print("Invalid UPC code.")
+        print(f"{code[-1]} is not a valid final digit for UPC code.")
+        print(f"{true_result} is what was calculated to be the valid digit.")
 
     
 
