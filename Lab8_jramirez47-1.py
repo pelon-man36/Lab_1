@@ -5,7 +5,11 @@ This program will validate UPC codes
 06/18/2026
 """
 def find_UPC(code):
-    print("This is a placeholder for now")
+    odd_sum = 0
+    for i in range(0, 11, 2):
+        odd_sum = int(code[i]) + odd_sum
+    print(odd_sum)
+
 
 
 
