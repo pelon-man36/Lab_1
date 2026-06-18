@@ -6,7 +6,7 @@ This program will validate UPC codes
 """
 def find_UPC(code):
     """This function will validate UPC codes.
-    
+
     Args:
         code (str): A string of 12 digits that represents a UPC code.
     Returns:
@@ -29,10 +29,10 @@ def find_UPC(code):
         true_result = 10 - true_result
     
     if true_result == int(code[-1]):
-        print(f"{true_result} is a valid final digit for UPC code.")
+        print(f"{true_result} is a valid final digit for the entered UPC code.")
     else:
-        print(f"{code[-1]} is not a valid final digit for the UPC code.")
-        print(f"{true_result} is what was calculated to be the valid digit for the UPC code.")
+        print(f"{code[-1]} is not a valid final digit for the entered UPC code.")
+        print(f"{true_result} is what was calculated to be the valid digit for the entered UPC code.")
 
     
 
