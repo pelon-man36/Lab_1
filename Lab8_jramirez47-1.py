@@ -8,7 +8,9 @@ def find_UPC(code):
     odd_sum = 0
     for i in range(0, 11, 2):
         odd_sum = int(code[i]) + odd_sum
-    print(odd_sum)
+    product = odd_sum * 3
+    print(product)
+
 
 
 
