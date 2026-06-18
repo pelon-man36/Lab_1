@@ -5,6 +5,14 @@ This program will validate UPC codes
 06/18/2026
 """
 def find_UPC(code):
+    """This function will validate UPC codes.
+    
+    Args:
+        code (str): A string of 12 digits that represents a UPC code.
+    Returns:
+        Prints whether the final digit of the user inputed UPC is valid or not, 
+        and if not valid, what it should be.
+    """
     odd_sum = 0
     even_sum = 0
 
