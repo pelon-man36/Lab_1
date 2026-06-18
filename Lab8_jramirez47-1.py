@@ -6,10 +6,17 @@ This program will validate UPC codes
 """
 def find_UPC(code):
     odd_sum = 0
+    even_sum = 0
+
     for i in range(0, 11, 2):
         odd_sum = int(code[i]) + odd_sum
     product = odd_sum * 3
-    print(product)
+    
+    for i in range(1, 10, 2):
+        even_sum = int(code[i]) + even_sum
+    result = product + even_sum
+    print(result)
+    
 
 
 
