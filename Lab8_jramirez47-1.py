@@ -15,7 +15,16 @@ def find_UPC(code):
     for i in range(1, 10, 2):
         even_sum = int(code[i]) + even_sum
     result = product + even_sum
-    print(result)
+    
+    true_result = result % 10
+    if true_result != 0:
+        true_result = 10 - true_result
+    
+    if true_result == int(code[-1]):
+        print("Valid UPC code.")
+    else:
+        print("Invalid UPC code.")
+
     
 
 
